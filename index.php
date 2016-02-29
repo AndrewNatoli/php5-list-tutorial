@@ -10,12 +10,11 @@
     <?php
     $filename = "list.json";
 
-    # Currently this file does not exist so an error will be displayed.
     if (!file_exists($filename)) {
         echo "File ({$filename}) does not exist!";
     } else {
         $contents = file_get_contents($filename);
-        # If the file existed we would display the contents.
+        # NOW the file exists so we will display its contents
         echo $contents;
     }
     ?>
