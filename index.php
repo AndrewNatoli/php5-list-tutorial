@@ -8,18 +8,13 @@
     <h1>My great list!</h1>
 
     <?php
-    # Create an array of our items
-    $list = array(
-    "Item One",
-    "Item Two",
-    "Item Three",
-    "Item Four",
-    "Item Five"
-    );
+    $filename = "list.json";
 
-    # Go through the "list" and print each "item"
-    foreach ($list as $item) {
-    echo $item . "<br/>";
+    if (!file_exists($filename)) {
+        echo "File ({$filename}) does not exist!";
+    } else {
+        $contents = file_get_contents($filename);
+        echo $contents;
     }
     ?>
 
