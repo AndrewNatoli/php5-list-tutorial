@@ -8,20 +8,21 @@
     <h1>My great list!</h1>
 
     <?php
-    echo "Item One<br/>";
-    echo "Item Two<br/>";
-    echo "Item Three<br/>";
-    echo "Item Four<br/>";
-    echo "Item Five<br/>";
+    # Create an array of our items
+    $list = array(
+    "Item One",
+    "Item Two",
+    "Item Three",
+    "Item Four",
+    "Item Five"
+    );
+
+    # Go through the "list" and print each "item"
+    foreach ($list as $item) {
+    echo $item . "<br/>";
+    }
     ?>
 
-    <!--
-    Item One<br/>
-    Item Two<br/>
-    Item Three<br/>
-    Item Four<br/>
-    Item Five<br/>
-    -->
 </body>
 
 </html>
