@@ -6,13 +6,22 @@
 
 <body>
     <h1>My great list!</h1>
-    
-    <!-- This is traditional HTML without any dynamic data. Boring. -->
+
+    <?php
+    echo "Item One<br/>";
+    echo "Item Two<br/>";
+    echo "Item Three<br/>";
+    echo "Item Four<br/>";
+    echo "Item Five<br/>";
+    ?>
+
+    <!--
     Item One<br/>
     Item Two<br/>
     Item Three<br/>
     Item Four<br/>
-    Item Five
+    Item Five<br/>
+    -->
 </body>
 
 </html>
